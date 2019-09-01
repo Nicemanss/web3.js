@@ -1,9 +1,9 @@
-# web3_js
+# web3.js
 
-git clone https://github.com/Nicemanss/web3_js
+git clone https://github.com/Nicemanss/web3.js
 
 sudo apt-get install nodejs -y
 
-cd web3_js
+cd web3.js
 
 node example.js
