@@ -33,5 +33,21 @@ function callback(accounts){
   }
 }
 
+console.log("Version: " + web3.net.version);
+console.log("Listening: " + web3.net.listening);
+console.log("Peer Count: " + web3.net.peerCount);
+console.log("Protocol Version: " + web3.hpb.protocolVersion);
+console.log("Is Syncing :" + web3.hpb.syncing);
+console.log("Coinbase :" + web3.hpb.coinbase);
+console.log("Mining :" + web3.hpb.mining);
+console.log("Created new Account :" + web3.personal.newAccount('12345678'))
+console.log("Get Transaction Count: " + web3.hpb.getTransactionCount("0x407d73d8a49eeb85d32cf465507dd71d507100c1"));
+console.log("Get Block Transaction Count: " + web3.hpb.getBlockTransactionCount("0x14e359841aa92a9befa315d866e3f9bbf4ea09662c30538064493f31ebc4ceee"));
+console.log("Get Uncle Count: " + web3.hpb.getBlockUncleCount("0x14e359841aa92a9befa315d866e3f9bbf4ea09662c30538064493f31ebc4ceee"));
+// console.log(web3.hpb.sendTransaction());
+console.log("Get Block: " + '%j', web3.hpb.getBlock("0x14e359841aa92a9befa315d866e3f9bbf4ea09662c30538064493f31ebc4ceee"))
+console.log("Get Transaction: " + '%j', web3.hpb.getTransaction("0x7f19c141e526066d92331a4ecad637251e8f9d986faf3d79160b16c310c0a86a"));
+console.log("Get Transaction by Block: " + '%j',web3.hpb.getTransactionFromBlock("0x14e359841aa92a9befa315d866e3f9bbf4ea09662c30538064493f31ebc4ceee", "0x0"));
+
 console.log("Account(s) available on the HPB Sync Node ("+node+")");
 showAccounts();
